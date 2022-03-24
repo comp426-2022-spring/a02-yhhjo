@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "flip": "node flip.js",
-    "flips": "node flip.js",
+    "flips": "node flips.js",
     "guess-flip": "node guess-flip.js"
   },
   "repository": {
@@ -19,5 +19,8 @@
     "url": "https://github.com/comp426-2022-spring/a02-yhhjo/issues"
   },
   "homepage": "https://github.com/comp426-2022-spring/a02-yhhjo#readme",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
 }

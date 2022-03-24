@@ -42,6 +42,7 @@ function coinFlips(flips) {
   for(let i=0; i<flips; i++) {
     ret.push(coinFlip())
   }
+  return ret
 }
 
 /** Count multiple flips
@@ -60,7 +61,7 @@ function coinFlips(flips) {
 function countFlips(array) {
   var nheads = 0;
   var ntails = 0;
-  for (str in array) {
+  for (var str of array) {
     if(str == "heads") {
       nheads++;
     } else if (str == "tails") {
@@ -98,4 +99,4 @@ function flipACoin(call) {
  * 
  * Export all of your named functions
 */
-export{coinFlip, coinFlips, flipACoin};
+export{coinFlip, coinFlips, flipACoin, countFlips};
